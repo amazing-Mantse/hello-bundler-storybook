@@ -1,0 +1,10 @@
+# Simple Makefile
+include make.mk
+
+repl:
+	@echo "\nConnect to the nREPL, and evaluate (start-cljs-repl):\n\n"
+	clj -m cljs.main -co build.edn -v -c -r
+
+run-storybook-ui:
+	@echo "\n Running StoryBook"
+	npm run storybook
